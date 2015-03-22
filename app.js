@@ -16,7 +16,7 @@ app.controller('planeCtrl', function ($scope, $http) {
         { name:'MANUFACTURER', displayName:'Manufacturer', width:150 },
         { name:'Plane_TYPE', displayName:'Type', width:75 },
         { name:'YEAR_MADE', displayName:'Year Made', width:100 },
-        { name:'Data_TEXT', displayName:'Message Data', width:1200 },
+        { name:'Data_TEXT', displayName:'Message Data', width:1200 }
     ];
 
     //  Gets a JSON response for messages by date, by POSTing to PHP page.  Sends this reponse to ui-grid to be displayed.
@@ -49,7 +49,7 @@ app.controller('planeCtrl', function ($scope, $http) {
         { name:'DateTime', displayName:'DateTime', width:90 },
         { name:'Manufacturer', displayName:'Manufacturer', width:110 },
         { name:'Model', displayName:'Model', width:150 },
-        { name:'MSG', displayName:'MSG', width:1200 },
+        { name:'MSG', displayName:'MSG', width:1200 }
     ];
 
 
