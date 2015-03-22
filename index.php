@@ -11,7 +11,7 @@
     <![endif]-->
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
-    <script src="app.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-touch.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.js"></script>

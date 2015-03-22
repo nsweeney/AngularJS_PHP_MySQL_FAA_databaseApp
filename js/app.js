@@ -24,7 +24,7 @@ app.controller('planeCtrl', function ($scope, $http) {
 
         var request = $http({
             method: "post",
-            url: "find_messages_by_date.php",
+            url: "backend/find_messages_by_date.php",
             data: {
                 user_input: $scope.user_input
             },
@@ -58,7 +58,7 @@ app.controller('planeCtrl', function ($scope, $http) {
 
         var request = $http({
             method: "post",
-            url: "find_planes_by_model.php",
+            url: "backend/find_planes_by_model.php",
             data: {
                 user_input: $scope.user_input
             },
