@@ -1,0 +1,11 @@
+<div  ng-controller='planeCtrl'>
+    <h1>Find plane messages by date.</h1>
+    <p>* This data comes from messages received via a system known as ACARS, the Aircaraft Communications and Reportint System.
+        This particular data represents messages transmitted by aircraft within the Central Florida area.</p>
+    <input class="form-control" type="text" ng-model="user_input" placeholder="Enter Date, e.g. 2014-03-01"><br>
+    <button class="btn btn-success" ng-click="find_messages_by_date()">Search</button></br>
+    </br>
+
+    <div ui-grid="planes_by_date_grid" ui-grid-pagination class="grid" style="height: 350px;" ui-grid-auto-resize></div>
+
+</div>
