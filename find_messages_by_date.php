@@ -2,12 +2,10 @@
 require_once 'config.php';
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
-//$postdata = file_get_contents("php://input");
-//$request = json_decode($postdata);
+$postdata = file_get_contents("php://input");
+$request = json_decode($postdata);
 // Get user input for date
-//$date = "'" . $request->user_input;
-
-//$date = '2014';
+$date = "'" . $request->user_input;
 
 $conn = new mysqli($host, $username, $password, $dbname) or die("Unable to connect to $host");
 
@@ -17,8 +15,7 @@ $sql = "select date_format(acars.DATE_TIME, '%Y-%m-%d') AS DateTime, master.n_nu
     master.YEAR_MFR AS YEAR_MADE
 	FROM master
 join acars on master.n_number = acars.n_number
-join	acftref on master.mfr_mdl_code = acftref.code WHERE acars.DATE_TIME LIKE '2014%' LIMIT 100";
-//   join	acftref on master.mfr_mdl_code = acftref.code WHERE acars.DATE_TIME LIKE " . $date . "%' LIMIT 100";
+join	acftref on master.mfr_mdl_code = acftref.code WHERE acars.DATE_TIME LIKE " . $date . "%' LIMIT 100";
 
 $result = $conn->query($sql);
 
